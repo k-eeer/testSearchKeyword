@@ -1,16 +1,17 @@
 # testSearchKeyword
-simple functional test and load test to duckduckgo search box.
+These scripts do a simple functional test and load test to duckduckgo search box, with pytest,selenium and locust.
 
 
-This scripts(run_jmeter.sh), you can run a demo of non_GUI mode jmeter script(allwebtest.jmx) ,which includes 
-some test cases like integrate testiing, white box testing, etc. It will generate a typical Jmeter output(.jtl and .log file) 
-and a .txt file to give a quick check tests are success or not (stress test is not included). It will also update changes to remote github repository.
 
 # environment and prerequisites:
 	
-	Ubuntu 18.04
-	Apache Jmeter 5.1.1
- 	Git realtive setting
+	Ubuntu 20.04 
+	pytest 5.4.3
+	pytest-html-2.1.1
+	geckodriver 0.26.0
+	Selenium server 3.141.59
+	locust 1.1.1
+ 	fake-headers 1.0.2
 
 
 # description and usage:
