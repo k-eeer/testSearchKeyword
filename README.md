@@ -1,5 +1,5 @@
 # testSearchKeyword
-These scripts do a simple functional test and load test to duckduckgo search box, with pytest,selenium and locust.
+These scripts do a simple functional test and load test to duckduckgo search box, with pytest, Selenium and Locust.
 
 
 
@@ -16,27 +16,25 @@ These scripts do a simple functional test and load test to duckduckgo search box
 
 # description and usage:
 
-    By run_jmeter.sh, you can run a non-GUI mode jmeter script(allwebtest.jmx).
-	$sh ./run_allwebtest.sh
+    By test_web.py, you can test search box in duckduckgo.com with "panda" keyword, and gererate a html report.
+	
+	$pytest --html=functionalTest.html
+
+    
+   ![](https://github.com/k-eeer/testSearchKeyword/blob/master/output/functionalTest.html)
 
 
-    The whole test list :
-
-![](https://github.com/k-eeer/jmetertest/blob/master/illustration/testStructure.png)
-
-and detail description of those tests are in ./illustration folder.
-
-
-    It'll generate a result as .jtl file. You  can view it in  chart or graph  with jmeter  GUI listeners.
-
-![](https://github.com/k-eeer/jmetertest/blob/master/illustration/sumReport.png)
-
-![](https://github.com/k-eeer/jmetertest/blob/master/illustration/resultGraph.png)
-
+    By locustFile.py, you can do a load test on loading search result page.
+    
+    	$locust -f locustFile.py
+	#open http://127.0.0.1:8089 and setting total number and increment per secsond of simulated users.
+	
+    It's the result of 100 users(increaseing 2 users/second), some request fails(red line) when total requests per second around 60 due to Http Error 418.
+    The error might be solved by proxy list.
+    
+![](https://github.com/k-eeer/testSearchKeyword/blob/master/output/totalRequestsPerSecond.png)
+![](https://github.com/k-eeer/testSearchKeyword/blob/master/output/numberOfUsers.png)
+![](https://github.com/k-eeer/testSearchKeyword/blob/master/output/responseTimes(ms).png)
 
 
-    You also can have a quick check those tests (stress test is not included)  are success or not.
-
-    $less quickChecResult.txt
-
-![](https://github.com/k-eeer/jmetertest/blob/master/illustration/quickCheckResult.png)
+   
