@@ -18,6 +18,7 @@ These scripts do a simple functional test and load test to duckduckgo search box
 
     By test_web.py, you can test search box in duckduckgo.com with "panda" keyword, and gererate a html repot.
  **[the html report](https://github.com/k-eeer/testSearchKeyword/blob/master/output/functionalTest.html)**
+ ![](https://github.com/k-eeer/testSearchKeyword/blob/master/output/functionalTest.png)
 	
 	$pytest --html=functionalTest.html
 
