@@ -17,10 +17,11 @@ These scripts do a simple functional test and load test to duckduckgo search box
 # description and usage:
 
     By test_web.py, you can test search box in duckduckgo.com with "panda" keyword, and gererate a html repot.
+    $pytest --html=functionalTest.html
  **[the html report](https://github.com/k-eeer/testSearchKeyword/blob/master/output/functionalTest.html)**
  ![](https://github.com/k-eeer/testSearchKeyword/blob/master/output/functionalTest.png)
 	
-	$pytest --html=functionalTest.html
+	
 
     
      By locustFile.py, you can do a load test on loading search result page.
