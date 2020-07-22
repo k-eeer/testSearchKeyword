@@ -16,15 +16,13 @@ These scripts do a simple functional test and load test to duckduckgo search box
 
 # description and usage:
 
-    By test_web.py, you can test search box in duckduckgo.com with "panda" keyword, and gererate a html report.
+    By test_web.py, you can test search box in duckduckgo.com with "panda" keyword, and gererate a html repot.
+ **[the html report](https://github.com/k-eeer/testSearchKeyword/blob/master/output/functionalTest.html)**
 	
 	$pytest --html=functionalTest.html
 
     
-   ![](https://github.com/k-eeer/testSearchKeyword/blob/master/output/functionalTest.html)
-
-
-    By locustFile.py, you can do a load test on loading search result page.
+     By locustFile.py, you can do a load test on loading search result page.
     
     	$locust -f locustFile.py
 	#open http://127.0.0.1:8089 and setting total number and increment per secsond of simulated users.
