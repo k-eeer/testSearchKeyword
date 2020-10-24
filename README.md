@@ -33,8 +33,8 @@ These scripts do a simple functional test and load test to duckduckgo search box
 		
     It's the result of 100 users(increaseing 2 users/second).
     According to the first figure below,the server is able to handle 9 requests per second, 
-    when load tested with 60 current users. In the second figure below,the median response time(yellow line) 
-    is 300ms to 400ms, and 95% response time is 100ms to 200ms then. 
+    when load tested with 60 current users. In the final figure below,the median response time(yellow line) 
+    is 300ms to 400ms, and 95% response time(green line) is 100ms to 200ms then. 
     
     Some request fails(red line) when total requests per second around 60 due to Http Error 418.
     The error might be solved by providing proxy list.
